@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>ONLINE BANKING</title>
+
+        <style>
+            /* Global styles */
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                margin: 0;
+            }
+
+            /* Header styles */
+            header {
+                background-color: purple;
+                color: #fff;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px 20px;
+            }
+
+            header h1 {
+                margin: 20px;
+                font-size: 36px;
+                font-weight: bold;
+            }
+
+            nav ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                display: flex;
+            }
+
+            nav li {
+                margin: 0 10px;
+            }
+
+            nav a {
+                color: #fff;
+                text-decoration: none;
+                font-size: 18px;
+                font-weight: bold;
+                transition: all 0.3s ease;
+            }
+
+            nav a:hover {
+                color: #fbc02d;
+            }
+
+            /* Hero section styles */
+            .hero {
+                background-image: url('Banking2.jpg');
+                background-size: 1525px, 400px;
+                opacity: 0.9;
+                background-repeat: no-repeat;
+                background-position: center;
+                height: 550px;
+                display: flex;
+                align-items: center;
+            }
+
+            .hero-content {
+                max-width: 800px;
+                margin: auto;
+                text-align: center;
+                color: #fff;
+            }
+
+            .hero-content h2 {
+                font-size: 48px;
+                margin: 0;
+            }
+
+            .hero-content p {
+                font-size: 24px;
+                margin: 20px 0;
+            }
+
+            .btn {
+                display: inline-block;
+                background-color: #eaed09;
+                color: #212121;
+                font-size: 18px;
+                padding: 10px 20px;
+                border-radius: 5px;
+                text-decoration: none;
+                transition: all 0.3s ease;
+            }
+
+            .btn:hover {
+                background-color: #d6f607;
+            }
+
+            /* Footer styles */
+            footer {
+                background-color: #136bef;
+                color: #fff;
+                height: 100px;
+                width: 1525px;
+                padding: 20px;
+                text-align: center;
+            }
+        </style>
+
+    </head>
+    <body>
+
+        <form action="./homepage">
+            <header>
+                <h1>ONLINE BANKING</h1>
+                <nav>
+                    <ul>
+                        <li><a href="aboutUs.html" target="_blank">About Us</a></li>
+                        <li><a href="contactUs.html" target="_blank">Contact Us</a></li>
+                        <li><a href="chooserole.html">Login</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <section class="hero">
+                <div class="hero-content">
+                    <h2>Welcome to Online Banking</h2>
+                    <a href="openAccount.html" class="btn">Open New Account</a>
+                </div>
+            </section>
+
+            <footer>
+                <p>&copy; 2023 Online Banking. All rights reserved.</p>
+            </footer>
+        </form>
+    </body>
+</html>

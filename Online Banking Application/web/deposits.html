@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Bill Payment Page</title>
+        <style>
+            body {
+                margin: 0px;
+                color: white;
+            }
+
+            header {
+                margin: 0px;
+                padding: 5px;
+            }
+
+            .links {
+                background-color: lightblue;
+                height: 30px;
+                color: blue;
+                text-align: center;
+                padding: 0px;
+                border: 2px solid gray;
+                border-radius: 10px;
+                padding: 20px;
+                margin: 20px;
+                padding: 5px;
+            }
+
+            input {
+                border-radius: 10px;
+            }
+
+            .links:hover {
+                background-color: cyan;
+            }
+
+            .libreg {
+                color: black;
+                height: 500px;
+                width: 500px;
+                background-color: lightblue;
+                border: 2px solid;
+                border-radius: 12px;
+                opacity: 0.9;
+                margin-left: 300px;
+                margin-top: 30px;
+                text-align: center;
+                padding-left: 150px;
+            }
+
+            a {
+                color: blue;
+                text-decoration: none;
+            }
+
+        </style>
+
+    </head>
+    <body bgcolor="gray">
+
+        <header
+            style="height: 100px; background-color: purple; color:white; border-bottom: 5px solid gray;">
+            <h1 align="center">ONLINE BANKING APPLICATION</h1>
+
+        </header>
+
+        <!--For Menu Option to the Admin  -->
+        <div
+            style="background-color: white; height: 650px; width: 20%; float: left; ">
+
+            <div class="links">
+                <a href="./customerWindow.jsp">Customer</a>
+            </div>
+            <div class="links">
+                <a href="./accountDetails.html">My Account & Profile</a>
+            </div>
+            <div class="links">
+                <a href="./transactions.html">Payment and Transactions</a>
+            </div>
+            <div class="links">
+                <a href="./billpayments.html">Bill Payments</a>
+            </div>
+            <div class="links">
+                <a href="./deposits.html">Deposits</a>
+            </div>
+            <div class="links">
+                <a href="./eServices.html">E-Services</a>
+            </div>
+            <div class="links">
+                <a href="./investments.html">Investments</a>
+            </div>
+            <div class="links">
+                <a href="./requestAndEnquiries.html">Request and Enquiries</a>
+            </div>
+            <div class="links">
+                <a href="./customerLogout.jsp">Logout</a>
+            </div>
+        </div>
+
+        <div
+            style="float: left; height: 650px; width: 80%; background-image: url('Banking1.jpg'); background-size: 1215px 650px;">
+            <div class="libreg">
+
+                <h1 style="text-align : center; padding: 10px;  margin-right: 100px;">Deposits</h1>
+                <form method="post" action="./deposits">
+
+                    <table cellpadding="12px">
+                        <tr>
+                            <th>To Account ::</th>
+                            <td><input type="text" name="toaccount" placeholder="Enter Receiver Account No." required="required"/> </td>
+                        </tr>
+                         <tr>
+                            <th>Customer Id ::</th>
+                            <td><input type="text" name="customerId" placeholder="Enter Customer id." required="required"/> </td>
+                        </tr>
+                        <tr>
+                            <th>Amount ::</th>
+                            <td><input type="text" name="amount" placeholder="Enter Transfer Amount" required="required"/> </td>
+                        </tr>
+                        <tr>
+                            <th>Password ::</th>
+                            <td><input type="password" name="password" placeholder="Enter Password" required="required"/> </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" align="center"><input type="submit"
+                                                                  value="Deposit" style="width: 150px; height: 30px;" /></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Choose Role</title>
+
+        <style>
+            body {
+                margin: 0px;
+                color: white;
+            }
+
+            header {
+                margin: 5px;
+                padding: 10px;
+            }
+
+            .links {
+                background-color: black;
+                height: 70px;
+                text-align: center;
+                border: 2px solid gray;
+                border-radius: 12px;
+                margin-top: 50px;
+            }
+
+            .links:hover {
+                background-color: cyan;
+                border: 2px solid black;
+            }
+            input{
+                border-radius: 10px;
+                margin-top: 8px;
+                padding: 4px 10px;
+                border-radius: 10px;
+            }
+
+            .libreg {
+                color: black;
+                height: 300px;
+                width: 500px;
+                opacity: 0.8;
+                background-color: lightblue;
+                font-size: 18px;
+                margin-left: 500px;
+                margin-top: 100px;
+                text-align: center;
+                padding: 10px;
+                border: 3px solid black;
+                border-radius: 12px;
+            }
+            a{
+                border: 1px solid black;
+                border-radius: 12px;
+                background-color: lightblue;
+                color: blue;
+                text-decoration: none;
+                padding: 8px;
+            }
+            a:hover{
+                background-color: cyan;
+            }
+            
+        </style>
+
+    </head>
+    <body>
+
+
+        <header style="height: 70px; background-color: purple;">
+            <h1 align="center">WELCOME TO ONLINE BANKING</h1>
+        </header>
+
+        <div
+            style="float: left; height: 650px; width: 100%; background-image: url('Bankingf.jpg'); background-size: 1525px 650px; background-repeat: no-repeat;">
+
+            <div class="libreg">
+                <center>
+                    <h1>Choose your role:</h1>
+                    <form method="post" action="./chooserole">
+                        <input type="radio" id="customer" name="role" value="customer" checked="checked">
+                        <label for="customer">Customer</label><br>
+                        <input type="radio" id="manager" name="role" value="manager" checked="checked">
+                        <label for="manager">Manager</label><br>
+                        <input type="radio" id="employee" name="role" value="employee" checked="checked">
+                        <label for="employee">Employee</label><br><br>
+                        <input type="submit" value="Submit">
+                        <br/><br/>
+                        <table>
+                            <tr>
+                                <td colspan="2" align="center"><a href="./registerManager.html">For Manager Registration</a></td>
+                            </tr>
+                        </table>      
+                 </center>
+            </div>
+        </div>
+    </body>
+</html>
